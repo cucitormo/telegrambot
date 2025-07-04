@@ -2,9 +2,9 @@ import { NextResponse } from 'next/server';
 import { TelegramClient } from 'telegram';
 import { StringSession } from 'telegram/sessions';
 import * as Telegram from 'telegram';
-import 'dotenv/config';
 
 const { Api } = Telegram;
+import 'dotenv/config';
 const apiId = parseInt(process.env.API_ID);
 const apiHash = process.env.API_HASH;
 
