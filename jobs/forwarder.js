@@ -52,7 +52,7 @@ async function runForwarder() {
         : config.fromGroup.toString();
 
       if (fromChannelId === cleanFromGroup) {
-        if (config.fromTopic && config.fromTopic !== fromTopicId) return;
+        // if (config.fromTopic && config.fromTopic !== fromTopicId) return;
 
         try {
           await client.sendMessage(config.toGroup, {
